@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Objects/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Objects/Pipe.tscn" type="PackedScene" id=2]
+
+[node name="Scene" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 510, 300 )
+
+[node name="Pipes" type="Node" parent="."]
+
+[node name="Pipe" parent="Pipes" instance=ExtResource( 2 )]
+position = Vector2( 650, 160 )
+
+[node name="Pipe3" parent="Pipes" instance=ExtResource( 2 )]
+position = Vector2( 820, 80 )
+
+[node name="Pipe5" parent="Pipes" instance=ExtResource( 2 )]
+position = Vector2( 990, 230 )
+
+[node name="Pipe2" parent="Pipes" instance=ExtResource( 2 )]
+position = Vector2( 650, 758 )
+
+[node name="Pipe4" parent="Pipes" instance=ExtResource( 2 )]
+position = Vector2( 820, 678 )
+
+[node name="Pipe6" parent="Pipes" instance=ExtResource( 2 )]
+position = Vector2( 990, 820 )
